@@ -30,7 +30,7 @@ pub fn get_args() -> MyResult<Config> {
                 .long("number")
                 .help("Number lines")
                 .takes_value(false)
-                .conflicts_with("number_nonblank_lines"),
+                .conflicts_with("number_nonblank"),
         )
         .arg(
             Arg::with_name("number_nonblank")
